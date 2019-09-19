@@ -88,7 +88,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -245,6 +244,11 @@ main .billboard {
   text-decoration: none;
 }
 
+footer .copyright a {
+  padding: 0 10px;
+  border-right: 1px solid #717171;
+}
+
 .billboard a:hover {
   text-decoration: underline;
 }
@@ -284,19 +288,14 @@ footer .side:last-child a {
   border-right: 1px solid #717171;
 }
 
+footer .copyright a:last-child {
+  border: none;
+}
+
 footer .side:last-child a:last-child {
   border: none;
 }
 
 footer .contacts {
   margin-bottom: 20px;
-}
-
-footer .copyright a {
-  padding: 0 10px;
-  border-right: 1px solid #717171;
-}
-
-footer .copyright a:last-child {
-  border: none;
 }
