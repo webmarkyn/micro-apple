@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Nav */
+
+nav {
+  color: #fff;
+  width: 980px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 36px;
+  background:
+    linear-gradient(
+      to bottom,
+      #8d8d8d 0%,
+      #717171 50%,
+      #5e5e5e 51%,
+      #717171 100%
+    );
+  border-radius: 5px;
+}
+
+nav .menu-list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu-list .menu-list-item {
+  text-align: center;
+  height: 100%;
+  line-height: 36px;
+  flex: 1;
+  border-right: #686868 1px solid;
+  cursor: pointer;
+}
+
+.menu-list-item.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list-item.search:hover {
+  background: none;
+  cursor: auto;
+}
+
+.menu-list-item.search input {
+  border-top: 1px solid #ccc;
+  width: 80%;
+  border-radius: 15px;
+  background: transparent url("images/search.png") no-repeat 5px 50%;
+  outline: none;
+}
+
+.menu-list-item.search input:focus {
+  background: #fff;
+}
+
+.menu-list-item:last-child {
+  border: none;
+}
+
+.menu-list-item:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Nav end */
+
+/* Main */
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main .billboard {
+  color: #fff;
+  height: 534px;
+  background: url("images/billboard.jpg") 0 100%;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.billboard h2 {
+  font-size: 64px;
+  font-weight: 100;
+  margin-top: -130px;
+  margin-bottom: 30px;
+}
+
+.billboard p {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.billboard a {
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .copyright a {
+  padding: 0 10px;
+  border-right: 1px solid #717171;
+}
+
+.billboard a:hover {
+  text-decoration: underline;
+}
+
+main .ads {
+  display: flex;
+  width: 100%;
+}
+
+.ads .ad-link {
+  width: 25%;
+  flex: 1;
+}
+
+.ad-link .ad-image {
+  width: 100%;
+}
+
+/* Main end */
+
+/* Footer */
+
+footer {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 16px 40px;
+  font-size: 13px;
+}
+
+footer .side {
+  width: 50%;
+}
+
+footer .side:last-child {
+  text-align: right;
+}
+
+footer .side:last-child a {
+  padding: 0 4px;
+  border-right: 1px solid #717171;
+}
+
+footer .copyright a:last-child {
+  border: none;
+}
+
+footer .side:last-child a:last-child {
+  border: none;
+}
+
+footer .contacts {
+  margin-bottom: 20px;
+}
