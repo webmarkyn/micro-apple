@@ -258,9 +258,13 @@ main .ads {
   width: 100%;
 }
 
-.ads .ad {
+.ads .ad-link {
   width: 25%;
   flex: 1;
+}
+
+.ad-link .ad-image {
+  width: 100%;
 }
 
 /* Main end */
